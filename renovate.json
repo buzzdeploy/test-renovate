@@ -34,7 +34,7 @@
       {
         "fileMatch": ["./.+\\.yaml$"],
         "matchStrings": [
-          "# renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?( url=(?<registryUrl>.*?))?\\s.*?version:\\s*(?<currentValue>.*)\\s"
+          "name: (?<depName>.*?)\n *url: (?<registryUrl>.*?)\n *version: (?<currentValue>.*)\n"
         ],
         "datasourceTemplate": "docker"
       },      {

@@ -41,18 +41,16 @@ components:
 - name: actions-runner-controller
   required: true
   charts:      
-    - name: runner-scale-set-controller
-      releaseName: runner-scale-set-controller
-      # renovate: datasource=docker depName=actions/actions-runner-controller-charts/gha-runner-scale-set-controller versioning=semver
+    - releaseName: runner-scale-set-controller
+      name: runner-scale-set-controller
       url: oci://ghcr.io/actions/actions-runner-controller-charts/gha-runner-scale-set-controller
       version: 0.3.0
       namespace: arc-systems
       valuesFiles:
         - "runner-scale-set-controller/values.yaml"
 
-    - name: runner-scale-set
-      releaseName: runner-scale-set
-      # renovate: datasource=docker depName=actions/actions-runner-controller-charts/gha-runner-scale-set versioning=semver
+    - releaseName: runner-scale-set
+      name: runner-scale-set
       url: oci://ghcr.io/actions/actions-runner-controller-charts/gha-runner-scale-set
       version: 0.3.0
       namespace: arc-runners
