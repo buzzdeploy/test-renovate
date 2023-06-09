@@ -32,12 +32,20 @@
     },
     "regexManagers": [
       {
-        "fileMatch": ["./.+\\.yaml$"],
+        "fileMatch": ["^zarf.yaml$"],
+        "matchStrings": [
+          "images:\n - (?<depName>.*):(?<currentValue>.*)\n"
+        ],
+        "datasourceTemplate": "docker"
+      },
+      {
+        "fileMatch": ["^zarf.yaml$"],
         "matchStrings": [
           "name: (?<depName>.*?)\n *url: (?<registryUrl>.*?)\n *version: (?<currentValue>.*)\n"
         ],
         "datasourceTemplate": "docker"
-      },      {
+      },
+      {
         "fileMatch": ["./.+\\.yaml$"],
         "matchStrings": [
           "registryUrl=(?<registryUrl>.*?)\n *chart: (?<depName>.*?)\n *version: (?<currentValue>.*)\n"
