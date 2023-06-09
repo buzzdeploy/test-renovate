@@ -41,7 +41,7 @@
       {
         "fileMatch": ["^zarf.yaml$"],
         "matchStrings": [
-          "url: (?<depName>.*?)\n *version: (?<currentValue>.*)\n"
+          "url: oci://(?<depName>.*?)\n *version: (?<currentValue>.*)\n"
         ],
         "datasourceTemplate": "docker"
       },
