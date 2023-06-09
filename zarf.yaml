@@ -43,7 +43,7 @@ components:
   charts:      
     - name: runner-scale-set-controller
       releaseName: runner-scale-set-controller
-      # renovate: datasource=docker
+      # renovate: datasource=docker depName=actions/actions-runner-controller-charts/gha-runner-scale-set-controller versioning=semver
       url: oci://ghcr.io/actions/actions-runner-controller-charts/gha-runner-scale-set-controller
       version: 0.3.0
       namespace: arc-systems
@@ -52,7 +52,7 @@ components:
 
     - name: runner-scale-set
       releaseName: runner-scale-set
-      # renovate: datasource=docker
+      # renovate: datasource=docker depName=actions/actions-runner-controller-charts/gha-runner-scale-set versioning=semver
       url: oci://ghcr.io/actions/actions-runner-controller-charts/gha-runner-scale-set
       version: 0.3.0
       namespace: arc-runners
