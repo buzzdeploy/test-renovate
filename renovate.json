@@ -18,7 +18,7 @@
       {
         "fileMatch": ["^zarf.yaml$"],
         "matchStrings": [
-          "# renovate: datasource=docker( versioning=(?<versioning>.*?))?\n\\s*-\\s+(?<depName>[^:]+):(?<currentValue>.*)"
+          "#\\s+renovate:\\s+datasource=(\\w+)(\\s+depName=(.*?))?\\s+(versioning=(.*?))?[\\s\\n].*:(.*?)[\\s\\n]"
         ],
         "datasourceTemplate": "docker"
       },
