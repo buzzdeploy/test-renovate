@@ -34,7 +34,7 @@
       {
         "fileMatch": ["^zarf.yaml$"],
         "matchStrings": [
-          "images:\n - (?<depName>.*):(?<currentValue>.*)\n"
+          "images:\n *- (?<depName>.*):(?<currentValue>.*)\n"
         ],
         "datasourceTemplate": "docker"
       },
