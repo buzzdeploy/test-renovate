@@ -8,7 +8,7 @@
     "timezone": "America/New_York",
     "repositories": ["MxNxPx/test-renovate"],
     "rebaseStalePrs": true,
-    "schedule": ["after 12pm and before 11am every weekday"],
+    "schedule": ["after 1am and before 12am every weekday"],
     "dependencyDashboard": true,
     "commitMessageSuffix": "[ci skip]",
     "platform": "github",
