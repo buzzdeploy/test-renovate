@@ -10,7 +10,6 @@
     "commitMessageSuffix": "[ci skip]",
     "platform": "github",
     "onboarding": false,
-    "requireConfig": false,
     "dependencyDashboardTitle": "Renovate Dashboard 🤖",
     "rebaseWhen": "conflicted",
     "commitBodyTable": true,
