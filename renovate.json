@@ -41,7 +41,7 @@
       {
         "fileMatch": ["^zarf.yaml$"],
         "matchStrings": [
-          "name: (?<depName>.*?)\n *url: (?<registryUrl>.*?)\n *version: (?<currentValue>.*)\n"
+          "url: (?<depName>.*?)\n *version: (?<currentValue>.*)\n"
         ],
         "datasourceTemplate": "docker"
       },
